@@ -12,8 +12,8 @@ package com.image.vuespringlocationpostgis.main.example.domain;
  * 24. 10. 31.        ipeac       최초 생성
  */
 public class ExampleDemoModel {
-    public String title;
-    public String name;
+    private String title;
+    private String name;
     
     public ExampleDemoModel(String title, String name) {
         this.title = title;
@@ -22,5 +22,13 @@ public class ExampleDemoModel {
     
     public static ExampleDemoModel create(String title, String name) {
         return new ExampleDemoModel(title, name);
+    }
+    
+    public String getTitle() {
+        return title;
+    }
+    
+    public String getName() {
+        return name;
     }
 }

@@ -3,8 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>${model.title}</title>
+    <title>${model.getTitle()}</title>
 </head>
 <body>
-<h1>Welcome, ${model.name}!</h1>
+<h1>Welcome, ${model.getName()}!</h1>
 </body>
