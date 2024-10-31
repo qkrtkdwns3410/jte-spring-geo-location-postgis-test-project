@@ -1,10 +1,10 @@
-<!DOCTYPE html>
-<html lang="ko">
+@import com.image.vuespringlocationpostgis.main.example.domain.ExampleDemoModel
+@param ExampleDemoModel model
+
 <head>
     <meta charset="UTF-8">
-    <title>@{title}</title>
+    <title>${model.title}</title>
 </head>
 <body>
-    <h1>Welcome, @{name}!</h1>
+<h1>Welcome, ${model.name}!</h1>
 </body>
-</html>

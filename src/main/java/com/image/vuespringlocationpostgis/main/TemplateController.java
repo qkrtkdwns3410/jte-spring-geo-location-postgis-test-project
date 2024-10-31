@@ -1,5 +1,6 @@
 package com.image.vuespringlocationpostgis.main;
 
+import com.image.vuespringlocationpostgis.main.example.domain.ExampleDemoModel;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Controller;
@@ -24,9 +25,11 @@ public class TemplateController {
     
     @GetMapping("/example")
     public String index(Model model) {
-        model.addAttribute("name", "Hello, World!");
-        model.addAttribute("title", "Vue.js + Spring Boot + PostGIS");
         
-        return "/pages/example";
+        ExampleDemoModel exampleDemoModel = ExampleDemoModel.create("Example", "Jun");
+        
+        model.addAttribute("model", exampleDemoModel);
+        
+        return "pages/example";
     }
 }
