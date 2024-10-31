@@ -22,7 +22,6 @@ import org.springframework.web.bind.annotation.GetMapping;
 @RequiredArgsConstructor
 @Slf4j
 public class TemplateController {
-    
     @GetMapping("/example")
     public String index(Model model) {
         

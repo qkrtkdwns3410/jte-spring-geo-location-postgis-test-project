@@ -1,10 +1,8 @@
-@import com.image.vuespringlocationpostgis.main.example.domain.ExampleDemoModel
-@param ExampleDemoModel model
+@layout("layout.jte")
 
-<head>
-    <meta charset="UTF-8">
-    <title>${model.getTitle()}</title>
-</head>
-<body>
-<h1>Welcome, ${model.getName()}!</h1>
-</body>
+@title = "홈페이지"
+
+@section("content") {
+<h2>환영합니다!</h2>
+<p>이곳은 메인 콘텐츠 영역입니다.</p>
+}
