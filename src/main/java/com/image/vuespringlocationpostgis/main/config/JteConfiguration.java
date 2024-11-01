@@ -13,12 +13,12 @@ import java.nio.file.Paths;
 
 @Configuration
 public class JteConfiguration {
-
+    
     @Bean
     public ViewResolver jteViewResolve(TemplateEngine templateEngine) {
         return new JteViewResolver(templateEngine);
     }
-
+    
     @Bean
     public TemplateEngine templateEngine() {
         String profile = System.getenv("SPRING_ENV");
