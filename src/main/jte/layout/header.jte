@@ -1,17 +1,3 @@
-<style>
-    nav ul {
-        display: flex;
-        list-style-type: none;
-        padding: 0;
-    }
-
-    nav ul li {
-        margin-right: 20px;
-    }
-</style>
-<head>
-    <title>내 웹사이트</title>
-</head>
 <header>
     <h1>내 웹사이트</h1>
     <nav>
