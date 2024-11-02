@@ -1,0 +1,3 @@
+[submodule "jte-spring-geo-location-postgis-test-project-sub"]
+	path = jte-spring-geo-location-postgis-test-project-sub
+	url = https://github.com/qkrtkdwns3410/jte-spring-geo-location-postgis-test-project-sub.git

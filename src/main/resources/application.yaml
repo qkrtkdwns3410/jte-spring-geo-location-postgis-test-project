@@ -18,3 +18,11 @@ spring:
     open-in-view: false
     hibernate:
       ddl-auto: create
+
+  config:
+    import: optional:file:jte-spring-geo-location-postgis-test-project-sub/secret-key.env[.properties]
+
+kakao:
+  map:
+    api:
+      key: ${KAKAO_MAP_API_KEY}
